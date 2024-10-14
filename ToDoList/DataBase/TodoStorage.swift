@@ -1,10 +1,3 @@
-//
-//  TodoStorage.swift
-//  ToDoList
-//
-//  Created by Khalid Gad on 25/04/2024.
-//
-
 import UIKit
 import Foundation
 import CoreData
@@ -136,4 +129,3 @@ class TodoStorage {
     }
     
 }
-

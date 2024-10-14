@@ -14,7 +14,7 @@ class ToDosVC: UIViewController {
         ToDo(title: "Waking Up", image: UIImage.wakingUpimg, details: "Get up in 5 AM"),
         ToDo(title: "Breakfast", image: UIImage.eatingimg, details: "Eating Breakfast(Honey outmeal) with my fav drink a Coffe in 6 AM"),
         ToDo(title: "Training", image: UIImage.trainingimg, details: "Go to the Gym and training Legs & Chest from 7AM to 9AM"),
-        ToDo(title: "Test-1"),
+        //ToDo(title: "Test-1"),
         ToDo(title: "Shower", image: UIImage.showerimg),
         ToDo(title: "Studing", image: UIImage.studingimg, details: """
              Studing from 10AM to 5PM
@@ -23,7 +23,7 @@ class ToDosVC: UIViewController {
              2 hours for doing Assignments & Tasks
              """),
         ToDo(title: "Lunch ", image: UIImage.eatingimg, details: "Have Lunch in 5:30PM"),
-        ToDo(title: "Test-2"),
+        //ToDo(title: "Test-2"),
         ToDo(title: "Friends Time", image: UIImage.friendsimg, details: "Go to the Club with my Friends at 6PM"),
         ToDo(title: "Watch a Movie", image: UIImage.watchingMovieimg, details: "watch a movie from Marvel at 9PM with eating a dinner & some snacks"),
         ToDo(title: "Reading", image: UIImage.readingimg, details: "Reading a 20 page of The subtle art of not giving a fuck"),
@@ -50,6 +50,7 @@ class ToDosVC: UIViewController {
         
         // notification for Delete ToDo
         NotificationCenter.default.addObserver(self, selector: #selector (CurrentToDoDeleted), name: NSNotification.Name(rawValue: "CurrentToDoDeleted"), object: nil)
+
     }
     
     // function for Add ToDo
@@ -147,4 +148,3 @@ extension ToDosVC: UITableViewDataSource {
         return cell
     }
 }
-
